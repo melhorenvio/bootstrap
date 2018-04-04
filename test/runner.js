@@ -21,7 +21,7 @@ var cases = fs.readdirSync( "test/cases" )
         return oFile.replace( ".styl", "" );
     } );
 
-describe( "Kouto Swiss Tests", function() {
+describe( "ME Bootstrap Tests", function() {
     cases.forEach( function( sTest ) {
         var sName = sTest.replace( rTestNameSanitize, " " );
 

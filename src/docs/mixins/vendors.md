@@ -1,11 +1,11 @@
 ### Vendors Prefixes
 
-**kouto swiss** comes with automatic vendor prefixer for the following properties.  
+**ME Bootstrap** comes with automatic vendor prefixer for the following properties.  
 You can define the behavior of the prefixer by changing the value of the global variable `me-vendors-prefixes`.
 
 #### Recommended prefixes (by default)
 
-By default, **kouto swiss** use the data from [caniuse](http://caniuse.com) website to select the prefixes to use.
+By default, **ME Bootstrap** use the data from [caniuse](http://caniuse.com) website to select the prefixes to use.
 
 You can select which version of browsers you want to support by modifying the following global variables.
 
@@ -55,11 +55,11 @@ If you want specific prefixes, you can force them by setting the global variable
 
     me-vendors-prefixes = false
 
-If you don't want to let **kouto swiss** to add vendor prefixes, and do the job yourself with such plugins like `autoprefixer`, simply set `me-vendors-prefixes` to false.
+If you don't want to let **ME Bootstrap** to add vendor prefixes, and do the job yourself with such plugins like `autoprefixer`, simply set `me-vendors-prefixes` to false.
 
 #### The `vendor` mixin
 
-You can also define your own vendors mixins with the **kouto swiss** built-in vendor mixin.
+You can also define your own vendors mixins with the **ME Bootstrap** built-in vendor mixin.
 
 `vendor( property, value [, feature = null [, prefixes = null [, official = true ] ] ] )`
 

@@ -50,6 +50,8 @@
     ],
     "utilities": [
         "colors",
+        "centeralign",
+        "fonts",
         "clearfix",
         "position",
         "size",
@@ -62,8 +64,5 @@
         "retina-image",
         "retina-query",
         "triangle"
-    ],
-    "grid": [
-        "system"
     ]
 }

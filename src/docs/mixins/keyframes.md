@@ -2,10 +2,10 @@
 
 To make animations with css3, you'll need to use the `animation` property & the `@keyframes` structure.
 
-The `animation` property is already handled in **kouto swiss** by the [vendors mecanism](#vendors).
+The `animation` property is already handled in **ME Bootstrap** by the [vendors mecanism](#vendors).
 
 The `@keyframes` structure is currently handled by the [Stylus language](http://learnboost.github.io/stylus/docs/keyframes.html).  
-**Note:** as precised on the stylus documentation, the *vendor expansion* of the `@keyframes` structure will be removed from Stylus in `1.0` version. When this time will come, we'll had that behaviour to **kouto swiss**.
+**Note:** as precised on the stylus documentation, the *vendor expansion* of the `@keyframes` structure will be removed from Stylus in `1.0` version. When this time will come, we'll had that behaviour to **ME Bootstrap**.
 
 #### Example
 
