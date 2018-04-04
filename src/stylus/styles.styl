@@ -1,0 +1,32 @@
+/* melhorenvio/bootstrap
+ *
+ * /src/stylus/styles.sty - Main stylesheet
+ *
+
+ * started at 10/03/2018
+ */
+
+// 0. Imports
+@import 'me-bootstrap'
+
+// 1. Settings - global variables
+@import "settings/*"
+
+// 2. Tools - mixins, functions & tools
+@import "tools/*"
+
+// 3. Generic - reset
+normalize()
+box-sizing-reset()
+
+// 4. Base - raw elements
+@import "base/*"
+
+// 5. Objects - cosmetic-free design patterns
+@import "objects/*"
+
+// 6. Components - designed components
+@import "components/*"
+
+// 7. Trumps - helpers & overrides
+// @import "trumps/*"
