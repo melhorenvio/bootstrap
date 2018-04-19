@@ -4,8 +4,7 @@
         "reset",
         "mixins",
         "functions",
-        "utilities",
-        "grid"
+        "utilities"
     ],
     "usage": [
         "grunt",
@@ -50,7 +49,7 @@
     ],
     "utilities": [
         "colors",
-        "centeralign",
+        "center-align",
         "fonts",
         "clearfix",
         "position",
