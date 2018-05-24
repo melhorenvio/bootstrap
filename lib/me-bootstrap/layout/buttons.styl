@@ -1,0 +1,56 @@
+.btn-border
+  cursor pointer
+  display inline-block
+  text-decoration none
+  background transparent
+  line-height 28px
+  font-size rem(12px)
+  font-family openSans
+  text-transform uppercase
+  color endeavour
+  font-weight 400
+  padding 0 16px
+  border 1px solid endeavour
+  border-radius 14px
+  transition all .5s
+
+  &.-blue
+    color endeavour
+    border-color endeavour
+    &:hover
+      background-color endeavour
+      color white
+
+  &.-full-blue
+    background endeavour
+    border-color endeavour
+    color white
+    &:hover
+      background-color transparent
+      color endeavour
+
+  &.-full-orange
+    background neonCarrot
+    border-color neonCarrot
+    color white
+    &:hover
+      background-color transparent
+      color neonCarrot
+
+  &.-big
+    line-height 33px
+    padding 0 35px
+    border-radius 17px
+    font-size rem(14px)
+    border-width 2px
+
+  &.-disabled
+  &:disabled
+    background-color ghost
+    border-color ghost
+    cursor default
+    span
+      color brightGray
+    &:hover
+      background-color ghost
+      border-color ghost
