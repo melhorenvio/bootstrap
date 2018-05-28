@@ -1,4 +1,7 @@
-.idea
 node_modules
+build
+dev/assets/css
+.git
+.idea
 yarn-error.log
-.vscode
+_package.json

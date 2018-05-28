@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800|Open+Sans:300,400,600,800');
+
+@import "../../lib/me-bootstrap"
+@import 'jeet'
+@import 'rupture'
+
+@import 'partials/*'
+
+normalize()
+meyer-reset()
+
+body
+  font-family 'Open Sans'
+  padding-top 90px
+
+.wrapper
+  center(1920px, 5%)
+  clear fix
+  padding-bottom 20px
+
+.content
+  float left
+  width calc('100% - 210px')
+
+.grid
+  display block
+  clear fix
+
+  .col-6-12
+    column(6/12)
+
+  .col-12-12
+    column(12/12)  
+
+h3
+  font-size 22px
+  font-weight 500
+  color #26303c
+  margin-bottom 15px

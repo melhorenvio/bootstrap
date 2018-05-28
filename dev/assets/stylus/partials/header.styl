@@ -1,0 +1,135 @@
+.header
+  background #ffffff
+  position fixed
+  top 0
+  left 0
+  size 100% 70px
+  box-shadow 0 3px 8px 0 rgba(50,50,50,0.3)
+  z-index 3
+  .logo
+    display block
+    float left
+    padding 10px 0
+    .ico
+      size 115px auto
+      .cls-1
+        fill blueRibbon
+      .cls-2
+        fill lighYellow
+  +below(800px)
+    &.open
+      .menu
+        transform translateX(0)
+        opacity 1
+        li
+          &:nth-child(1)
+          &:nth-child(2)
+          &:nth-child(3)
+            right 0
+
+      #toggleMenu
+        span
+          &:nth-child(1)
+            transform translate(0, 15px) rotate(-45deg)
+          &:nth-child(2)
+            transform translate(20px, 15px)
+            opacity 0
+          &:nth-child(3)
+            transform translate(0, 15px) rotate(45deg)
+
+  .menu
+    float right
+    font-size 0
+    li
+      display inline-block
+      transition all .5s
+    a
+      display block
+      font-size rem(14px)
+      color ebonyClay
+      text-decoration none
+      padding 28px 15px
+
+    +above(800px)
+      li
+        &:hover
+        &.active
+          &:nth-child(1)
+            background lighten(#3598dc, 20%)
+          &:nth-child(2)
+            background lighten(#3598dc, 40%)
+          &:nth-child(3)
+            background lighten(#3598dc, 60%)
+          a 
+            color endeavour
+
+    +below(800px)
+      float none
+      position absolute
+      top 69px
+      right 0
+      left 0
+      transform translateX(-100%)
+      margin-top 0
+      transition all .5s
+      li
+        display block
+        width 100%
+        padding 0
+        background #ffffff
+        transition all .5s ease-out
+        &:nth-child(1)
+          right 80px
+          position relative
+          background lighten(#3598dc, 20%)
+        &:nth-child(2)
+          right 160px
+          position relative
+          background lighten(#3598dc, 40%)
+        &:nth-child(3)
+          right 240px
+          position relative  
+          background lighten(#3598dc, 60%)
+        a
+          display block
+          text-align center
+          font-size 10vw
+          line-height calc('33vh - 20px')
+          padding 0
+          margin 0
+          color #ffffff
+
+  #toggleMenu
+    display block
+    size 30px
+    position absolute
+    top 20px
+    right 10px
+    display none
+    span
+      position absolute
+      size 30px 3px
+      background shuttleGray
+      transition all .5s
+      &:nth-child(1)
+        transform translate(0, 5px)
+      &:nth-child(2)
+        transform translate(0, 15px)
+      &:nth-child(3)
+        transform translate(0, 25px)
+
+    &.menu-sec-intro
+      span
+        &:nth-child(1)
+          background lighten(#3598dc, 20%)
+    &.menu-sec-marca
+      span
+        &:nth-child(2)
+          background lighten(#3598dc, 40%)
+    &.menu-sec-contato
+      span
+        &:nth-child(3)
+          background lighten(#3598dc, 60%)
+
+    +below(800px)
+      display block

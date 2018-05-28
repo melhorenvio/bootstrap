@@ -3,54 +3,60 @@
   display inline-block
   text-decoration none
   background transparent
-  line-height 28px
-  font-size rem(12px)
-  font-family "Open Sans"
+  line-height 30px
+  font-size 12px
+  font-family 'Open Sans'
   text-transform uppercase
-  color endeavour
+  color #0550a0
   font-weight 400
   padding 0 16px
-  border 1px solid endeavour
-  border-radius 14px
+  border 1px solid #0550a0
+  border-radius 4px
   transition all .5s
 
   &.-blue
-    color endeavour
-    border-color endeavour
+    color #0550a0
+    border-color #0550a0
     &:hover
-      background-color endeavour
+      background-color #0550a0
+      color white
+
+  &.-orange
+    color #fe9037
+    border-color #fe9037
+    &:hover
+      background-color #fe9037
       color white
 
   &.-full-blue
-    background endeavour
-    border-color endeavour
+    background #0550a0
+    border-color #0550a0
     color white
     &:hover
       background-color transparent
-      color endeavour
+      color #0550a0
 
   &.-full-orange
-    background neonCarrot
-    border-color neonCarrot
+    background #fe9037
+    border-color #fe9037
     color white
     &:hover
       background-color transparent
-      color neonCarrot
+      color #fe9037
 
   &.-big
     line-height 33px
-    padding 0 35px
-    border-radius 17px
-    font-size rem(14px)
+    padding 0 32px
+    border-radius 4px
+    font-size 14px
     border-width 2px
 
   &.-disabled
   &:disabled
-    background-color ghost
-    border-color ghost
+    background-color #c8cdda
+    border-color #c8cdda
     cursor default
-    span
-      color brightGray
+    color #3b3f51
     &:hover
-      background-color ghost
-      border-color ghost
+      background-color #c8cdda
+      border-color #c8cdda

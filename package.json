@@ -1,8 +1,8 @@
 {
   "name": "me-bootstrap",
   "version": "0.2.8",
-  "version_date": "2018-03-10",
-  "description": "ME Bootstrap",
+  "description": "me bootstrap",
+  "main": "lib/me-bootstrap.js",
   "keywords": [
     "Stylus",
     "CSS",
@@ -14,19 +14,15 @@
     "reset",
     "utility"
   ],
-  "homepage": "http://melhorenvio.com.br",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "github": "https://github.com/melhorenvio/bootstrap",
   "author": {
     "name": "Matheus Thomaz",
     "email": "matheus@melhorenvio.com.br",
     "url": "http://msthomaz.com"
   },
-  "contributors": [
-    {
-      "name": "Matheus Thomaz",
-      "url": "http://msthomaz.com"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/melhorenvio/bootstrap"
@@ -40,34 +36,23 @@
       "url": "https://github.com/melhorenvio/bootstrap/blob/master/LICENSE"
     }
   ],
-  "main": "lib/me-bootstrap.js",
-  "scripts": {
-    "test": "grunt test"
-  },
   "engines": {
     "node": "*"
   },
-  "dependencies": {
-    "prefiks": "^0.3",
-    "stylus": "0.54.5"
-  },
   "devDependencies": {
-    "chalk": "^1.1.1",
-    "cheerio": "^0.22.0",
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.1.0",
-    "grunt-concurrent": "^2.2.1",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-connect": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-pug": "^1.0.0",
-    "grunt-contrib-stylus": "^1.2.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-mocha-cli": "^3.0.0",
-    "highlight.js": "^9.9.0",
-    "load-grunt-tasks": "^3.4.1",
-    "marked": "^0.3.5",
-    "mocha": "^3.1.2",
-    "should": "^11.1.1"
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^1.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-svg-symbols": "^2.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.7.0",
+    "jeet": "7.2.0",
+    "kouto-swiss": "^1.1.0",
+    "run-sequence": "^2.2.0",
+    "rupture": "^0.6.2"
   }
 }
