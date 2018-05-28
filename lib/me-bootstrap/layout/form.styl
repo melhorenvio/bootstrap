@@ -1,0 +1,164 @@
+.me-form
+  display block
+
+  .title-form
+    margin 16px 0 8px
+    font-size 14px
+    font-weight 600
+
+  .formLine
+    margin-bottom 16px
+    font-family 'Open Sans'
+    transition all .5s
+    clear fix
+    .inputBox
+      position relative
+      height 46px
+      label
+        position absolute
+        top 50%
+        left 8px
+        transform translateY(-50%)
+        font-size 14px
+        transition all .5s
+        color #556976
+
+      &.-select
+        label
+          padding-right 45px
+
+    input[type="text"]
+    input[type="number"]
+    input[type="password"]
+      size 100%
+      padding 16px 8px 0
+      line-height 46px
+      box-sizing border-box
+      border none
+      font-size 16px
+      color #3b3f51
+      background transparent
+      border-bottom 1px solid #0550a0
+      border-left 1px solid #0550a0
+      border-bottom-left-radius 4px
+
+    .errorText
+      opacity 0
+      color #e7505a
+      position absolute
+      top 52px
+      left 8px
+      padding 0
+      margin 0
+      font-size 12px
+
+    &.active
+    &.focus
+      .inputBox
+        label
+          font-size 10px
+          top 4px
+          transform translateY(0)
+
+    &.error
+      margin-bottom 32px
+      input[type="text"]
+      input[type="number"]
+      input[type="password"]
+      .ui.search.selection.dropdown
+      .dropdown.icon
+        border-color #e7505a !important
+      .errorText
+        opacity 1
+
+  .other-line
+    clear fix
+    .formLine
+      &:last-child
+        display none
+    &.-open
+      .formLine
+        &:first-child
+          width 200px
+          float left
+        &:last-child
+          display block
+          float right
+          width calc('100% - 210px')
+
+
+  .ui.search.selection.dropdown
+    background none
+    border none
+    box-sizing border-box
+    padding-left 8px
+    min-height auto
+    height 46px
+    z-index 2
+    border 1px solid #0550a0 !important
+    border-radius 4px
+    label
+      z-index 1
+
+    &.active
+      + label
+        font-size 10px
+        top 4px
+        transform translateY(0)
+
+    .menu > .item
+      font-size rem(12px)
+
+    .item
+      border-top none !important
+
+    > input.search
+    .text
+      position absolute
+      top 0
+      size 100% 40px
+      overflow hidden
+      padding 16px 8px 0 !important
+      font-size 16px
+      color #3b3f51
+      height auto
+      box-sizing border-box
+
+    &.visible
+      border-bottom none
+      border-bottom-left-radius 0
+      border-bottom-right-radius 0
+
+    &.visible
+      .dropdown.icon
+        border-bottom 1px solid #0550a0
+      .menu
+        border 1px solid #0550a0 !important
+        border-width 0 1px 1px 1px !important
+        width 100%
+        margin 0 -1px
+        box-shadow none
+        border-radius 0 0 4px 4px
+        box-sizing border-box
+
+    .dropdown.icon
+      position absolute
+      top 0
+      right 0
+      size 40px 100%
+      padding 0
+      margin 0
+      float none
+      border-left 1px solid #0550a0
+      box-sizing border-box
+      &:before
+        content ''
+        position absolute
+        display block
+        size 12px
+        border-bottom 1px solid #0550a0
+        border-left 1px solid #0550a0
+        border-bottom-left-radius 2px
+        top 42%
+        left 50%
+        transform translate3d(-49%, -50%, 0) rotate(-45deg)

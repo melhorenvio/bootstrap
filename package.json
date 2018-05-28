@@ -54,5 +54,9 @@
     "kouto-swiss": "^1.1.0",
     "run-sequence": "^2.2.0",
     "rupture": "^0.6.2"
+  },
+  "dependencies": {
+    "vue-search-select": "^2.6.1",
+    "vuelidate": "^0.7.4"
   }
 }
