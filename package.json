@@ -1,6 +1,6 @@
 {
   "name": "me-bootstrap",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "description": "me bootstrap",
   "main": "lib/me-bootstrap.js",
   "keywords": [
