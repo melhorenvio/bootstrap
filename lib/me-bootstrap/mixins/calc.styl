@@ -4,7 +4,7 @@ _me-calc-processing( current-property, operation, fallback )
     if fallback
         add-property( prop, fallback )
     for prefix in caniuse-prefixes( "calc" )
-        add-property( prop, s( "-%s-calc(%s)", unquote( prefix ), operation ) )
+        add-property( prop, s( "-%s-calc(%s)", prefix, operation ) )
     s( "calc(%s)", operation )
 
 me-calc( operation, fallback = false )
