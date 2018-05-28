@@ -3,6 +3,7 @@
     <p>
       Welcome to your Bourgeon app!
     </p>
+    <img class="logo" src="./../assets/logo.png">
     <p>
       <router-link to="/hello/bourgeon">Hello</router-link>
     </p>

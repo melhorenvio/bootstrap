@@ -37,7 +37,6 @@
       </div>
 
       <div class="content">
-        <img class="logo" src="./assets/logo.png">
         <router-view></router-view>
       </div>
     </div>
