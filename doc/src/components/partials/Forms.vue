@@ -9,6 +9,9 @@
 
         <h3>Select com opção de outro</h3>
         <select-other></select-other>
+
+        <h3>Check</h3>
+        <checkline></checkline>
       </div>
     </div>
 
@@ -36,15 +39,17 @@
 </template>
 
 <script>
-  import TextInput from '../forms/TextInput.vue';
-  import SelectInput from '../forms/SelectInput.vue';
-  import SelectOther from '../forms/SelectOther.vue';
+  import TextInput from '../_forms/TextInput.vue';
+  import SelectInput from '../_forms/SelectInput.vue';
+  import SelectOther from '../_forms/SelectOther.vue';
+  import Checkline from '../_forms/Checkline.vue';
 
   export default {
     components: {
       TextInput,
       SelectOther,
-      SelectInput
+      SelectInput,
+      Checkline
     },
 
     data() {

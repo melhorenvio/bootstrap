@@ -33,6 +33,8 @@
         <ul>
           <li><router-link to="/buttons">Botões</router-link></li>
           <li><router-link to="/forms">Formulário</router-link></li>
+          <li><router-link to="/tooltip">Tooltip</router-link></li>
+          <li><router-link to="/tables">Tables</router-link></li>
         </ul>
       </div>
 

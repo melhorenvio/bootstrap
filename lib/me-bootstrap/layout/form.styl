@@ -163,3 +163,46 @@
         top 42%
         left 50%
         transform translate3d(-49%, -50%, 0) rotate(-45deg)
+
+  .checkLine
+    padding 5px 0
+    
+  .customCheckBullet
+    position absolute
+    opacity 0
+    & + label
+      display block
+      position relative
+      cursor pointer
+      padding-left 45px
+      color brightGray
+      font-family 'Open Sans'
+      font-size 16px
+    & + label:before
+      content ''
+      position absolute
+      top 50%
+      left 0
+      transform translateY(-50%)
+      size 32px 12px
+      border 1px solid brightGray
+      background #ffffff
+      border-radius 12px
+      transition all 1s
+    & + label:after
+      content ''
+      position absolute
+      top 50%
+      left 0
+      transform translateY(-50%)
+      size 16px
+      background #ffffff
+      border-radius 50%
+      border 1px solid brightGray
+      box-shadow none
+      transition left .5s
+    &:checked + label:after
+      background endeavour
+      left 16px
+    &:checked + label:before
+      border-color endeavour
