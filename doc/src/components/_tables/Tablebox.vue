@@ -1,5 +1,10 @@
 <template>
   <div>
+    <div class="btn-box -center">
+      <a v-if="!listTables.length" href="javascript:;" class="btn-border -full-blue" @click="populate()">Popular tabela</a>
+      <a v-else href="javascript:;" class="btn-border -full-blue" @click="clear()">Limpar tabela</a>
+    </div>
+
     <div class="table-box" :class="{'-inative': !listTables.length }">
       <div v-if="listTables.length" class="table -amazon">
         <ul class="head">
@@ -53,16 +58,35 @@
           {
             created_at: "2018-05-30 18:51:03",
             filename: "0",
-            id: 13,
+            id: 1,
             postal_code: "01018020",
             updated_at: "2018-05-30 18:51:03"
-          }
+          },
+          {
+            created_at: "2018-05-30 18:51:03",
+            filename: "0",
+            id: 2,
+            postal_code: "01018020",
+            updated_at: "2018-05-30 18:51:03"
+          },
+          {
+            created_at: "2018-05-30 18:51:03",
+            filename: "0",
+            id: 3,
+            postal_code: "01018020",
+            updated_at: "2018-05-30 18:51:03"
+          },
         ]
       }
     },
 
     methods: {
-
+      populate() {
+        this.listTables = this.listTablesPopulated;
+      },
+      clear() {
+        this.listTables = [];
+      }
     }
 
   }
