@@ -5,3 +5,4 @@ dev/assets/css
 .idea
 yarn-error.log
 _package.json
+.vscode
