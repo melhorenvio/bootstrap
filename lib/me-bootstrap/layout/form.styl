@@ -1,6 +1,10 @@
 .me-form
   display block
 
+  .options-list
+    .inputBox
+      margin-top 8px
+
   .title-form
     margin 16px 0 8px
     font-size 14px
@@ -14,6 +18,39 @@
     .inputBox
       position relative
       size 100% 46px
+
+      &:before
+        opacity 0
+        position absolute
+        top 10px
+        size 40px
+        line-height 40px
+        font-family openSans
+        font-size 14px
+        color #3b3f51
+
+      &.-textarea
+        height 200px
+
+      &.-select
+        label
+          padding-right 45px
+      
+      &.-cm
+        &:before
+          content 'cm'
+          text-align right
+          right 5px
+        input
+          padding-right 30px
+      &.-kg
+        &:before
+          content 'kg'
+          text-align right
+          right 5px
+        input
+          padding-right 30px
+
       label
         position absolute
         top 50%
@@ -22,13 +59,6 @@
         font-size 14px
         transition all .5s
         color #556976
-
-      &.-textarea
-        height 200px
-
-      &.-select
-        label
-          padding-right 45px
 
     textarea
       line-height 1.4em      
@@ -54,7 +84,6 @@
       opacity 0
       color #e7505a
       position absolute
-      bottom -15px
       left 8px
       padding 0
       margin 0
@@ -254,3 +283,33 @@
       text-transform uppercase
       color #626262
       text-decoration none
+
+
+
+.me-form
+  
+
+  .formLine
+    .inputBox
+      
+
+    .subText
+      opacity 0
+      color #3598dc
+      position absolute
+      left 8px
+      line-height 1.2em
+      font-size 12px
+      transition all .5s
+      &.-force
+        opacity 1
+
+    &.focus
+      .subText
+        opacity 1
+
+    &.focus
+    &.active
+      .inputBox
+        &:before
+          opacity 1
