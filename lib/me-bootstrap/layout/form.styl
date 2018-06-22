@@ -5,6 +5,17 @@
     .inputBox
       margin-top 8px
 
+  .subText
+    opacity 0
+    color #3598dc
+    position absolute
+    left 8px
+    line-height 1.2em
+    font-size 12px
+    transition all .5s
+    &.-force
+      opacity 1
+
   .title-form
     margin 16px 0 8px
     font-size 14px
@@ -15,6 +26,17 @@
     font-family 'Open Sans'
     transition all .5s
     clear fix
+
+    &.focus
+      .subText
+        opacity 1
+
+    &.focus
+    &.active
+      .inputBox
+        &:before
+          opacity 1
+          
     .inputBox
       position relative
       size 100% 46px
@@ -283,33 +305,3 @@
       text-transform uppercase
       color #626262
       text-decoration none
-
-
-
-.me-form
-  
-
-  .formLine
-    .inputBox
-      
-
-    .subText
-      opacity 0
-      color #3598dc
-      position absolute
-      left 8px
-      line-height 1.2em
-      font-size 12px
-      transition all .5s
-      &.-force
-        opacity 1
-
-    &.focus
-      .subText
-        opacity 1
-
-    &.focus
-    &.active
-      .inputBox
-        &:before
-          opacity 1
