@@ -30,6 +30,11 @@
       </nav>
 
       <div class="menu-lateral">
+        <p>Home</p>
+        <ul>
+          <li><router-link to="/home/forms">Formulário</router-link></li>
+        </ul>
+        <p>Dashboard</p>
         <ul>
           <li><router-link to="/buttons">Botões</router-link></li>
           <li><router-link to="/forms">Formulário</router-link></li>
