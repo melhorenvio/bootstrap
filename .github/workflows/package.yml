@@ -18,9 +18,6 @@ jobs:
           node-version: 24
           registry-url: 'https://npm.pkg.github.com'
           scope: '@melhorenvio'
-          cache: 'npm'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - run: npm publish
         env:
