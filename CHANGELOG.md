@@ -1,3 +1,7 @@
+## <small>0.4.8 (2026-09-22)</small>
+
+* fix(ci): remove npm ci do workflow de publish ([e3fbcf3](https://github.com/melhorenvio/bootstrap/commit/e3fbcf3))
+
 ## <small>0.4.7 (2026-09-22)</small>
 
 * fix(ci): corrige branch de master no semantic release ([150cdd5](https://github.com/melhorenvio/bootstrap/commit/150cdd5))
