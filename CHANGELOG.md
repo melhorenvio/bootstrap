@@ -1,3 +1,7 @@
+## <small>0.4.9 (2026-09-22)</small>
+
+* fix(ci): remove cache npm do workflow de publish ([af06bda](https://github.com/melhorenvio/bootstrap/commit/af06bda))
+
 ## <small>0.4.8 (2026-09-22)</small>
 
 * fix(ci): remove npm ci do workflow de publish ([e3fbcf3](https://github.com/melhorenvio/bootstrap/commit/e3fbcf3))

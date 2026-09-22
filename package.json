@@ -1,6 +1,6 @@
 {
   "name": "@melhorenvio/me-bootstrap",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "main": "lib/me-bootstrap.js",
   "keywords": [
     "Stylus",
