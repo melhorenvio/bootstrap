@@ -27,6 +27,6 @@ jobs:
             @semantic-release/npm
             @semantic-release/git
             @semantic-release/github
-            conventional-changelog-conventionalcommits
+            conventional-changelog-conventionalcommits@7
         env:
           GITHUB_TOKEN: ${{ secrets.ORG_TOKEN_PKG_WRITER }}
