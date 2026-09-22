@@ -22,8 +22,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - run: npm ci
-
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ORG_TOKEN_PKG_WRITER }}
