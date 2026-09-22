@@ -1,0 +1,32 @@
+name: semantic release stage
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - "CHANGELOG.md"
+      - "package.json"
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.ORG_TOKEN_PKG_WRITER }}
+          fetch-depth: 0
+
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v6
+        with:
+          extra_plugins: |
+            @semantic-release/commit-analyzer
+            @semantic-release/release-notes-generator
+            @semantic-release/changelog
+            @semantic-release/npm
+            @semantic-release/git
+            @semantic-release/github
+            conventional-changelog-conventionalcommits
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_TOKEN_PKG_WRITER }}
